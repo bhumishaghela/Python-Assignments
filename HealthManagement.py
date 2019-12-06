@@ -51,12 +51,12 @@ def retrievetaskperformed(client_name):
     if 'rohan' in client_name:
         print("Rohan's Exercise Plan is:")
         fp=open("rohanExercise.txt","r")
-        if line in fp:
+        for line in fp:
             print(line)
         fp.close()
         print("Rohan's Diet Plan is:")
         f2=open("rohanDiet.txt","r")
-        if line in f2:
+        for line in f2:
             print(line)
         f2.close()
     
@@ -64,33 +64,35 @@ def retrievetaskperformed(client_name):
     elif 'hammad' in client_name:
         print("Hammad's Exercise Plan is:")
         fp=open("HammadExercise.txt","r")
-        if line in fp:
+        for line in fp:
             print(line)
         fp.close()
         print("Hammad's Diet Plan is:")
         f2=open("HammadDiet.txt","r")
-        if line in f2:
+        for line in f2:
             print(line)
         f2.close()
     elif 'harry' in client_name:
         print("Harry's Exercise Plan is:")
         fp=open("HarryExercise.txt","r")
-        if line in fp:
+        for line in fp:
             print(line)
         fp.close()
         print("Harry's Diet Plan is:")
         f2=open("HarryDiet.txt","r")
-        if line in f2:
+        for line in f2:
             print(line)
         f2.close()
 while(1):
-    choice=int(raw_input("Enter 1 to lock or 2 to retrieve task"))
+    choice=int(raw_input("Enter 1 to lock or 2 to retrieve task or 3 for exit"))
     if choice==1:
         client_name=raw_input("Enter client name for which you want  to lock task")
         locktasksdone(client_name)
     elif choice==2:
-        client_name=raw_input("Enter client name for which you want  to lock task")
+        client_name=raw_input("Enter client name for which you want  to retrieve task")
         retrievetaskperformed(client_name)
+    elif choice==3:
+        exit(0)
         
         
         
