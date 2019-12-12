@@ -5,13 +5,13 @@ def locktasksdone(client_name):
     if 'rohan' in client_name.lower():
         choice=int(raw_input("Press 1 for exercise or 2 for diet"))
         if choice==1:
-            exercise=raw_input("What should I lock")
+            exercise=raw_input("What should I log")
             fp=open("rohanExercise.txt","a")
             time=getdata()
             fp.write("["+str(time)+"] ")
             fp.write(str(exercise))
         elif choice==2:
-            diet=raw_input("What should I lock")
+            diet=raw_input("What should I log")
             fp=open("rohanDiet.txt","a")
             time=getdata()
             fp.write("["+str(time)+"] ")
@@ -19,13 +19,13 @@ def locktasksdone(client_name):
     elif 'hammad' in client_name.lower():
         choice=int(raw_input("Press 1 for exercise or 2 for diet"))
         if choice==1:
-            exercise=raw_input("What should I lock")
+            exercise=raw_input("What should I log")
             fp=open("HammadExercise.txt","a")
             time=getdata()
             fp.write("["+str(time)+"] ")
             fp.write(str(exercise))
         elif choice==2:
-            diet=raw_input("What should I lock")
+            diet=raw_input("What should I log")
             fp=open("HammadDiet.txt","a")
             time=getdata()
             fp.write("["+str(time)+"] ")
@@ -33,7 +33,7 @@ def locktasksdone(client_name):
     elif 'harry' in client_name.lower():
         choice=int(raw_input("Press 1 for exercise or 2 for diet"))
         if choice==1:
-            exercise=raw_input("What should I lock")
+            exercise=raw_input("What should I log")
             fp=open("HarryExercise.txt","a")
             time=getdata()
             fp.write("["+str(time)+"] ")
